@@ -81,12 +81,15 @@ await sql.commit();
 * Criar arquivo 'mocha.json' no mesmo diretório onde sera executado a procedure
 * Setar process.env.DATABASE_MOCHA = true;
 
+#### Estrutura de pastas
+```
 Api
 └─ src
     └─ diretorio
         |─ controller.js
         |─ repository.js //sql.execute('procedureName')
         └─ mocha.json
+```
 
 ##### mocha.js
 ```json
