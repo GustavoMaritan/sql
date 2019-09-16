@@ -1,3 +1,12 @@
+### Package para manipular banco de dados SQL
+### Use MSSQL
+
+Install
+```js
+npm install ?
+```
+
+Config
 ```js
 const Sql = require('sql');
 
