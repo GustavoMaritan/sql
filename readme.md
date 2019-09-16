@@ -74,3 +74,27 @@ if(!result.returnValue)
 
 await sql.commit();
 ```
+
+## Mock
+
+* Mocar retornos procedures
+* Criar arquivo 'mocha.json' no mesmo diretório onde sera executado a procedure
+* Setar process.env.DATABASE_MOCHA = true;
+
+Api
+└─ src
+    └─ diretorio
+        |─ controller.js
+        |─ repository.js //sql.execute('procedureName')
+        └─ mocha.json
+
+##### mocha.js
+```json
+{
+	"procedureName": {
+		"content": [],
+		"outputs": null,
+		"returnValue": null
+	}
+}
+```
