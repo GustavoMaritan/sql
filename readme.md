@@ -92,7 +92,7 @@ Api
 ```
 
 ##### mocha.js
-```json
+```js
 {
 	"procedureName": {
 		"content": [],
