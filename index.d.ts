@@ -10,6 +10,13 @@ declare namespace sql {
         database: string;
         user: string;
         password: string;
+        connectTimeout?: 60000;
+        requestTimeout?: 60000;
+        pool?: {
+            max?: 5,
+            min?: 1,
+            idleTimeoutMillis?: 3000
+        }
     };
 
     interface ISqlTypes {
@@ -58,6 +65,7 @@ declare namespace sql {
     interface SqlInstance {
         isolation: ISqlIsolation;
         types: ISqlTypes;
+
         /**
          * 
          * @param parameters 
@@ -65,20 +73,20 @@ declare namespace sql {
          * @example
          * 
          * // Exemplo Parameters
-         * var param = { 
+         * const param = { 
          *      name: 'exemplo',                    // Input param
          *      $return_value: sql.types.int()      // Output param
          * };
          * 
          * // Exemplo Model
-         * var modelEx = { 
+         * const modelEx = { 
          *      usuario: {}, 
          *      telefones: [] 
          * }; 
          * // Resulta em { content: {usuario:{}, telefones:[]}}
          * //------
          */
-        execute(procedure: String, parameters?: any, model?: Object): Promise<ISqlReturn>;
+        execute(procedure: String, parameters?: any, model?: any): Promise<ISqlReturn>;
         /**
          * 
          * @param parameters 
