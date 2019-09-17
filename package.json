@@ -1,5 +1,5 @@
 {
-  "name": "sql",
+  "name": "sql-mock",
   "version": "0.0.1",
   "description": "Gerenciamento sql",
   "main": "lib/index.js",

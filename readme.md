@@ -92,11 +92,20 @@ Api
 ```
 
 ##### mocha.js
+
+* Estrutura do json
+    - Key = Nome da procedure
+        - parameters = Nome dos parâmetros e seu devido valor
+        - returns = [content, outputs, returnValue] // Definir valores conforme retorno da procedure
+
 ```js
 {
 	"procedureName": {
+        "parameters": {
+            "param1": 'value'
+        }
 		"content": [],
-		"outputs": null,
+		"outputs": {},
 		"returnValue": null
 	}
 }
