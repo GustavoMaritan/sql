@@ -1,14 +1,25 @@
-### Package para manipular banco de dados SQL
-* Possibilita mochar retornos do banco de dados para teste em todos ambientes. *
-
-### Use MSSQL
+## Package para manipular banco de dados SQL
+* Possibilita mochar retornos do banco de dados para teste em todos ambientes.
+* Use MSSQL
 
 Install
 ```js
 npm i sql-mocha
 ```
 
-Config
+## Documentação
+
+* [Configuração](Configuração)
+* [Execute](Execute)
+* [Execute/Model](Execute/Model)
+* [ExecuteOne](ExecuteOne)
+* [Query](Query)
+* [Transactions](Transactions)
+* [Mocha](Mocha)
+* [Types](SQLTypes(mssql))
+
+
+### Configuração
 ```js
 const Sql = require('sql');
 
@@ -17,6 +28,7 @@ const sql = new Sql({
     database: '',
     user: '',
     password: '',
+    //DEFAULTS
     connectTimeout: 60000,
     requestTimeout: 60000,
     pool: {
@@ -27,6 +39,7 @@ const sql = new Sql({
 });
 ```
 
+### Execute
 ```js
 const return = await sql.execute('procedureName', {
     input: any,
@@ -43,6 +56,7 @@ return =
 */
 ```
 
+### Execute/Model
 ```js
 const return = await sql.execute('procedureName', {
     input: any,
@@ -63,6 +77,7 @@ return =
 */
 ```
 
+### ExecuteOne
 ```js
 const return = await sql.executeOne('procedureName', {
     input: any
@@ -77,12 +92,14 @@ return =
 */
 ```
 
+### Query
 ```js
 const return = await sql.query('Select * From TABELA Where id = $id', {
     id: 'String|Number|Date|Boolean'
 });
 ```
 
+### Transactions
 ```js
 await sql.openTransaction();
 
@@ -97,7 +114,7 @@ if(!result.returnValue)
 await sql.commit();
 ```
 
-## Mocha
+### Mocha
 
 * Mocar retornos procedures
 * Criar arquivo 'mocha.json' no mesmo diretório onde sera executado a procedure
@@ -136,3 +153,32 @@ Api
 * Erros
     - Code 1: Arquivo mocha não encontrado
     - Code 2: Parâmetros inválidos
+
+### SQLTypes(mssql)
+
+* varChar
+* nVarChar
+* text
+* int
+* bigInt
+* tinyInt
+* smallInt
+* bit
+* float
+* numeric
+* decimal
+* real
+* date
+* dateTime
+* dateTime2
+* dateTimeOffset
+* smallDateTime
+* time
+* uniqueIdentifier
+* smallMoney
+* money
+* binary
+* varBinary
+* char
+* nChar
+* nText
