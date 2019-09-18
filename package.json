@@ -1,6 +1,6 @@
 {
   "name": "sql-mocha",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Gerenciamento sql",
   "main": "lib/index.js",
   "directories": {
@@ -14,5 +14,12 @@
   "license": "mit",
   "dependencies": {
     "mssql": "^4.3.7"
-  }
+  },
+  "keywords": [
+    "sql",
+    "mocha",
+    "mock",
+    "procedures",
+    "test"
+  ]
 }
