@@ -11,7 +11,7 @@ npm i sql-mocha
 
 * [Configuração](#Configuração)
 * [Execute](#Execute)
-* [Execute/Model](#Execute/Model)
+* [Execute/Model](#ExecuteModel)
 * [ExecuteOne](#ExecuteOne)
 * [Query](#Query)
 * [Transactions](#Transactions)
