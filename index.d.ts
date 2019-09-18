@@ -20,8 +20,19 @@ declare namespace sql {
     };
 
     interface ISqlTypes {
-        varChar(value?: String): SqlType;
-        nVarChar(value?: String): SqlType;
+        numeric(precision: Number, scale: Number, value?: Number): SqlType;
+        decimal(precision: Number, scale: Number, value?: Number): SqlType;
+
+        varChar(length: Number, value?: String): SqlType;
+        nVarChar(length: Number, value?: String): SqlType;
+        char(length: Number, value?: String): SqlType;
+        nChar(length: Number, value?: String): SqlType;
+        varBinary(length: Number, value?: String): SqlType;
+
+        time(scale: Number, value?: TimerHandler): SqlType;
+        dateTime2(scale: Number, value?: Date): SqlType;
+        dateTimeOffset(scale: Number, value?: Date): SqlType;
+
         text(value?: String): SqlType;
         int(value?: Number): SqlType;
         bigInt(value?: Number): SqlType;
@@ -29,22 +40,14 @@ declare namespace sql {
         smallInt(value?: Number): SqlType;
         bit(value?: Number): SqlType;
         float(value?: Number): SqlType;
-        numeric(value?: Number): SqlType;
-        decimal(value?: Number): SqlType;
         real(value?: Number): SqlType;
         date(value?: Date): SqlType;
         dateTime(value?: Date): SqlType;
-        dateTime2(value?: Date): SqlType;
-        dateTimeOffset(value?: Date): SqlType;
         smallDateTime(value?: Date): SqlType;
-        time(value?: TimerHandler): SqlType;
         uniqueIdentifier(value?: String): SqlType;
         smallMoney(value?: Number): SqlType;
         money(value?: Number): SqlType;
         binary(value?: Number): SqlType;
-        varBinary(value?: Number): SqlType;
-        char(value?: String): SqlType;
-        nChar(value?: String): SqlType;
         nText(value?: String): SqlType;
     }
 
