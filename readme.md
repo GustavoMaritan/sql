@@ -42,8 +42,17 @@ const sql = new Sql({
 ### Execute
 ```js
 const return = await sql.execute('procedureName', {
+    input: any
+});
+
+const return = await sql.execute('procedureName', {
+    input: sql.types.decimal(14,2, 1444.23),
+    $output: sql.types.int()
+});
+
+const return = await sql.execute('procedureName', {
     input: any,
-    $output: sql.types.type()
+    $output: sql.types.int()
 });
 
 /*
@@ -156,8 +165,16 @@ Api
 
 ### SQLTypes(mssql)
 
-* varChar
-* nVarChar
+* numeric(precision, scale, value?)
+* decimal(precision, scale, value?)
+* varChar(length, value?)
+* nVarChar(length, value?)
+* char(length, value?)
+* nChar(length, value?)
+* varBinary(length, value?)
+* time(scale, value?)
+* dateTime2(scale, value?)
+* dateTimeOffset(scale, value?)
 * text
 * int
 * bigInt
@@ -165,20 +182,12 @@ Api
 * smallInt
 * bit
 * float
-* numeric
-* decimal
 * real
 * date
 * dateTime
-* dateTime2
-* dateTimeOffset
 * smallDateTime
-* time
 * uniqueIdentifier
 * smallMoney
 * money
 * binary
-* varBinary
-* char
-* nChar
 * nText
