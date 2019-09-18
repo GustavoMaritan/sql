@@ -16,7 +16,7 @@ npm i sql-mocha
 * [Query](#Query)
 * [Transactions](#Transactions)
 * [Mocha](#Mocha)
-* [Types](#SQLTypes(mssql))
+* [Types](#SQLTypesmssql)
 
 
 ### Configuração
