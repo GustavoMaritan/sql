@@ -9,14 +9,14 @@ npm i sql-mocha
 
 ## Documentação
 
-* [Configuração](Configuração)
-* [Execute](Execute)
-* [Execute/Model](Execute/Model)
-* [ExecuteOne](ExecuteOne)
-* [Query](Query)
-* [Transactions](Transactions)
-* [Mocha](Mocha)
-* [Types](SQLTypes(mssql))
+* [Configuração](#Configuração)
+* [Execute](#Execute)
+* [Execute/Model](#Execute/Model)
+* [ExecuteOne](#ExecuteOne)
+* [Query](#Query)
+* [Transactions](#Transactions)
+* [Mocha](#Mocha)
+* [Types](#SQLTypes(mssql))
 
 
 ### Configuração
