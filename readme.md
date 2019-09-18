@@ -130,3 +130,7 @@ Api
 	}
 }
 ```
+
+* Erros
+    - Code 1: Arquivo mocha não encontrado
+    - Code 2: Parâmetros inválidos
