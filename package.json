@@ -1,6 +1,6 @@
 {
   "name": "sql-mocha",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Gerenciamento sql",
   "main": "lib/index.js",
   "directories": {
@@ -20,6 +20,9 @@
     "mocha",
     "mock",
     "procedures",
-    "test"
+    "test",
+    "database",
+    "mssql",
+    "sqlserver"
   ]
 }
