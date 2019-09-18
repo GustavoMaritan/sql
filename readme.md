@@ -3,7 +3,7 @@
 
 Install
 ```js
-npm install ?
+npm i sql-mocha
 ```
 
 Config
@@ -28,7 +28,7 @@ const sql = new Sql({
 ```js
 const return = await sql.execute('procedureName', {
     input: any,
-    $output: sql.type()
+    $output: sql.types.type()
 });
 
 /*
@@ -66,7 +66,7 @@ await sql.openTransaction();
 
 const result = await sql.execute('procedureName', {
     input: any,
-    $output: sql.type()
+    $output: sql.types.type()
 });
 
 if(!result.returnValue)
