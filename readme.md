@@ -175,19 +175,19 @@ Api
 * **time(scale, value?)**
 * **dateTime2(scale, value?)**
 * **dateTimeOffset(scale, value?)**
-* **text**
-* **int**
-* **bigInt**
-* **tinyInt**
-* **smallInt**
-* **bit**
-* **float**
-* **real**
-* **date**
-* **dateTime**
-* **smallDateTime**
-* **uniqueIdentifier**
-* **smallMoney**
-* **money**
-* **binary**
-* **nText**
+* **text(value?)**
+* **int(value?)**
+* **bigInt(value?)**
+* **tinyInt(value?)**
+* **smallInt(value?)**
+* **bit(value?)**
+* **float(value?)**
+* **real(value?)**
+* **date(value?)**
+* **dateTime(value?)**
+* **smallDateTime(value?)**
+* **uniqueIdentifier(value?)**
+* **smallMoney(value?)**
+* **money(value?)**
+* **binary(value?)**
+* **nText(value?)**
