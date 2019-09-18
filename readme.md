@@ -42,6 +42,26 @@ return =
 ```
 
 ```js
+const return = await sql.execute('procedureName', {
+    input: any,
+    $output: sql.types.type()
+}, { dataset1: [], dataset2: {}, dataset3: [] });
+
+/*
+return =
+    {
+        content: {
+            dataset1: [], 
+            dataset2: {}, 
+            dataset3: []
+        },
+        returnValue: Number|String,
+        outputs: { output: any }
+    }
+*/
+```
+
+```js
 const return = await sql.executeOne('procedureName', {
     input: any
 });
