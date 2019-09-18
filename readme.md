@@ -165,29 +165,29 @@ Api
 
 ### SQLTypes(mssql)
 
-* **{c:red}numeric(precision, scale, value?){/c}**
-* decimal(precision, scale, value?)
-* varChar(length, value?)
-* nVarChar(length, value?)
-* char(length, value?)
-* nChar(length, value?)
-* varBinary(length, value?)
-* time(scale, value?)
-* dateTime2(scale, value?)
-* dateTimeOffset(scale, value?)
-* text
-* int
-* bigInt
-* tinyInt
-* smallInt
-* bit
-* float
-* real
-* date
-* dateTime
-* smallDateTime
-* uniqueIdentifier
-* smallMoney
-* money
-* binary
-* nText
+* **numeric(precision, scale, value?)**
+* **decimal(precision, scale, value?)**
+* **varChar(length, value?)**
+* **nVarChar(length, value?)**
+* **char(length, value?)**
+* **nChar(length, value?)**
+* **varBinary(length, value?)**
+* **time(scale, value?)**
+* **dateTime2(scale, value?)**
+* **dateTimeOffset(scale, value?)**
+* **text**
+* **int**
+* **bigInt**
+* **tinyInt**
+* **smallInt**
+* **bit**
+* **float**
+* **real**
+* **date**
+* **dateTime**
+* **smallDateTime**
+* **uniqueIdentifier**
+* **smallMoney**
+* **money**
+* **binary**
+* **nText**
