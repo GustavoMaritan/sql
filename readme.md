@@ -1,4 +1,6 @@
 ### Package para manipular banco de dados SQL
+* Possibilita mochar retornos do banco de dados para teste em todos ambientes. *
+
 ### Use MSSQL
 
 Install
@@ -95,7 +97,7 @@ if(!result.returnValue)
 await sql.commit();
 ```
 
-## Mock
+## Mocha
 
 * Mocar retornos procedures
 * Criar arquivo 'mocha.json' no mesmo diretório onde sera executado a procedure
