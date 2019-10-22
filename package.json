@@ -1,6 +1,6 @@
 {
   "name": "sql-mocha",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Gerenciamento sql",
   "main": "lib/index.js",
   "directories": {
@@ -13,6 +13,7 @@
   "author": "Gustavo Maritan <gustavomaritan@gmail.com>",
   "license": "mit",
   "dependencies": {
+    "express-http-context": "^1.2.3",
     "mssql": "^4.3.7"
   },
   "keywords": [
@@ -23,6 +24,7 @@
     "test",
     "database",
     "mssql",
-    "sqlserver"
+    "sqlserver",
+    "context"
   ]
 }
