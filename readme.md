@@ -21,7 +21,7 @@ npm i sql-mocha
 
 ### Configuração
 ```js
-const Sql = require('sql');
+const { Sql } = require('sql-mocha');
 
 const sql = new Sql({
     server: '',
@@ -162,6 +162,25 @@ Api
 * Erros
     - Code 1: Arquivo mocha não encontrado
     - Code 2: Parâmetros inválidos
+
+
+### Context
+
+* Instância de sql por requisição
+
+```js
+
+const express = require('express');
+const app = express();
+const { Context } = require('sql-mocha');
+
+Context.middleware(app, { /* Sql Config */ });
+
+app.get('/', async (req, res, next)=> {
+    await Context.sql.execute('procedureName');
+});
+
+```
 
 ### SQLTypes(mssql)
 
