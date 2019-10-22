@@ -110,7 +110,17 @@ declare namespace sql {
     interface Sql {
         new(config: Config): SqlInstance;
     }
+
+    interface Context {
+        sql: SqlInstance;
+        middleware(app, config: Config): void;
+    }
+
+    interface Index {
+        Sql: Sql;
+        Context: Context;
+    }
 }
 
-declare var sql: sql.Sql;
+declare var sql: sql.Index;
 export = sql;

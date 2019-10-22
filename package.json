@@ -1,6 +1,6 @@
 {
   "name": "sql-mocha",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Gerenciamento sql",
   "main": "lib/index.js",
   "directories": {
